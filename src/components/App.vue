@@ -2,8 +2,10 @@
   <div id="app">
     This is App
     <Header />
+      <main>
+          <RouterView></RouterView>
+      </main>
   </div>
-  
 </template>
 
 <script>
