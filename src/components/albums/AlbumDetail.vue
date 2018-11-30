@@ -3,31 +3,9 @@
     <h2>{{album.title}}</h2>
     <h3>{{album.description}}</h3>
     <p>
-      <button @click="showModal = true">Add a new Image</button>
+      <button @click="show = true">Add a new Image</button>
     </p>
-    <div v-if="showModal" class="modal">
-      <div class="content">
-
-        <form @submit.prevent="handleAdd()">
-          <label>
-            <span>Title:</span>
-            <input v-model="image.title" required>
-          </label>
-
-          <label>
-            <span>Image Url:</span>
-            <input v-model="image.urlImage" required>
-          </label>
-        
-          <label>
-            <span></span>
-            <button type="submit">Add</button>
-          </label>
-        </form>
-
-        <button @click="showModal = false">Close</button>
-      </div>
-    </div>
+    <Modal :show="show"/>
     <nav>
       <RouterLink to="./thumbnail">Thumbnail</RouterLink>
       <RouterLink to="./list">List</RouterLink>
@@ -39,23 +17,25 @@
 
 <script>
 import albumsApi from '../../services/albumsApi';
+import Modal from '../shared/Modal';
 
 export default {
     data() {
         return {
             album: null,
-            showModal: false,
+            show: false,
             image: {}
         };
     },
     methods: {
         handleAdd() {
             this.album.images.push(this.image);
-            this.showModal = false;
+            this.show = false;
             this.image = {};
         }
     },
     components: {
+        Modal
     },
     created() {
         this.album = albumsApi.getAlbum(this.$route.params.make);
