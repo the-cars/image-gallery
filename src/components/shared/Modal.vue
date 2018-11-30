@@ -1,8 +1,9 @@
 <template>
   <div v-if="show" class="modal">
     <div class="content">
-      <button>Close</button>
-      I am the form
+      <button class="close" @click="onClose">X</button>
+      <slot></slot>
+
     </div>
   </div>
 </template>
@@ -11,7 +12,8 @@
 
 export default {
     props: {
-        show: Boolean
+        show: Boolean,
+        onClose: Function
     }
 };
 </script>
@@ -29,6 +31,7 @@ div.modal {
   z-index: 2;
 }
 div.content {
+  position: relative;
   background: white;
   padding: 40px;
 }
@@ -38,26 +41,32 @@ form {
     display: flex;
     justify-content: space-evenly;
    
-  }
-  button {
-    border: 2px solid black;
-    border-radius: 10px;
-    margin: 10px;
-    font-size: 0.75em;
-    background-color:rgba(175, 22, 22, 0.851);
-    color: lightsteelblue;
-  }
-  span {
-    display: inline-block;
-  }
-  input {
-    width: 200px;
-    height: 20px;
-  }
-  label {
-    display: flex;
-    padding-right: 7px;
-    font-size: 1.1em;
-    font-weight: 500;
-  }
+}
+button {
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 10px;
+  font-size: 0.75em;
+  background-color:rgba(175, 22, 22, 0.851);
+  color: lightsteelblue;
+}
+span {
+  display: inline-block;
+}
+input {
+  width: 200px;
+  height: 20px;
+}
+label {
+  display: flex;
+  padding-right: 7px;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+.close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
 </style>

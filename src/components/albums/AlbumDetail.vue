@@ -3,9 +3,17 @@
     <h2>{{album.title}}</h2>
     <h3>{{album.description}}</h3>
     <p>
-      <button @click="show = true">Add a new Image</button>
+      <button @click="showModal = true">Add a new Image</button>
     </p>
-    <Modal :show="show"/>
+    <Modal :show="showModal" :onClose="() => showModal = false">
+      <form>
+        Title: <input>
+        Url: <input>
+        <button>Save</button>
+      </form>
+    </Modal>
+      
+
     <nav>
       <RouterLink to="./thumbnail">Thumbnail</RouterLink>
       <RouterLink to="./list">List</RouterLink>
@@ -23,14 +31,14 @@ export default {
     data() {
         return {
             album: null,
-            show: false,
+            showModal: false,
             image: {}
         };
     },
     methods: {
         handleAdd() {
             this.album.images.push(this.image);
-            this.show = false;
+            this.showModal = false;
             this.image = {};
         }
     },
