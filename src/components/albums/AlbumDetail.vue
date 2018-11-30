@@ -6,7 +6,24 @@
     </p>
     <div v-if="showModal" class="modal">
       <div class="content">
-        I am the form
+
+        <form @submit.prevent="handleAdd()">
+          <label>
+            <span>Title:</span>
+            <input v-model="image.title" required>
+          </label>
+
+          <label>
+            <span>Image Url:</span>
+            <input v-model="image.urlImage" required>
+          </label>
+        
+          <label>
+            <span></span>
+            <button type="submit">Add</button>
+          </label>
+        </form>
+
         <button @click="showModal = false">Close</button>
       </div>
     </div>
@@ -22,8 +39,16 @@ export default {
     data() {
         return {
             album: null,
-            showModal: false
+            showModal: false,
+            image: {}
         };
+    },
+    methods: {
+        handleAdd() {
+            this.album.images.push(this.image);
+            this.showModal = false;
+            this.image = {};
+        }
     },
     components: {
         Thumbnails
