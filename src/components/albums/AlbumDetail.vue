@@ -28,13 +28,13 @@
         <button @click="showModal = false">Close</button>
       </div>
     </div>
-    <Thumbnails :images="album.images" class="thumbs"/>
+    <ThumbnailView :images="album.images" class="thumbs"/>
   </section>
 </template>
 
 <script>
 import albumsApi from '../../services/albumsApi';
-import Thumbnails from './Thumbnails';
+import ThumbnailView from './images/ThumbnailView';
 
 export default {
     data() {
@@ -52,7 +52,7 @@ export default {
         }
     },
     components: {
-        Thumbnails
+        ThumbnailView
     },
     created() {
         this.album = albumsApi.getAlbum(this.$route.params.make);

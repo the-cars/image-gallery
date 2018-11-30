@@ -1,4 +1,6 @@
 <template>
+<section>
+    <h3>Thumbnail View</h3>
     <ul>
         <li v-for="(image, index) in images"
             :key="index">
@@ -6,6 +8,7 @@
         <img :src="image.urlImage">
         </li>
     </ul>
+</section>
 </template>
 
 <script>
