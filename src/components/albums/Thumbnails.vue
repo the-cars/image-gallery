@@ -40,7 +40,7 @@ ul img {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 1;
+  z-index: 0;
   object-fit: cover;
 }
 h4 {
@@ -51,7 +51,7 @@ h4 {
   width: 100%;
   height: 40px;
   font-size: .85em;
-  z-index: 10;
+  z-index: 1;
   color:red;
   font-weight: bold
 }

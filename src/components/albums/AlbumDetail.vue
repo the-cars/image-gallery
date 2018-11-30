@@ -69,6 +69,7 @@ div.modal {
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, .5);
+  z-index: 2;
 }
 div.content {
   background: white;
@@ -79,6 +80,7 @@ form {
     text-align: center;
     display: flex;
     justify-content: space-evenly;
+   
   }
   button {
     border: 2px solid black;
