@@ -1,5 +1,23 @@
-import albums from '../assets/data.js';
+import albumData from '../assets/data.js';
 import shortid from 'shortid';
+
+// check if we saved something to local storage
+const json = window.localStorage.getItem('albums');
+
+// if found, use it - otherwise use the seed data
+let albums = null;
+
+if(json) {
+    albums = JSON.parse(json);
+}
+else {
+    albums = albumData;
+    save();
+}
+
+function save() {
+    window.localStorage.setItem('albums', JSON.stringify(albums));
+}
 
 export default {
     getAlbums() {
@@ -12,6 +30,7 @@ export default {
         album.id = shortid.generate();
         album.images = [];
         albums.push(album);
+        save();
         return album;
     }
 };
