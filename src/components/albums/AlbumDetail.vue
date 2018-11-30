@@ -28,7 +28,13 @@
         <button @click="showModal = false">Close</button>
       </div>
     </div>
-    <ThumbnailView :images="album.images" class="thumbs"/>
+    <nav>
+      <RouterLink to="./thumbnail">Thumbnail</RouterLink>
+      <RouterLink to="./list">List</RouterLink>
+      <RouterLink to="./gallery">Gallery</RouterLink>
+    </nav>
+    <RouterView :images="album.images">DEFAULT VIEW</RouterView>
+    <!-- <ThumbnailView :images="album.images" class="thumbs"/> -->
   </section>
 </template>
 

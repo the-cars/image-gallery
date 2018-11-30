@@ -1,5 +1,14 @@
 <template>
-   <p> I am 
+   <section>
+    <h3>Gallery View</h3>
+    <!-- <ul>
+        <li v-for="(image, index) in images"
+            :key="index">
+        <h4>{{image.title}}</h4>
+        <img :src="image.urlImage">
+        </li>
+    </ul> -->
+</section>
 </template>
 
 <script>

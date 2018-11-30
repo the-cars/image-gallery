@@ -6,6 +6,7 @@ import AlbumDetail from './components/albums/AlbumDetail';
 import NewAlbum from './components/albums/NewAlbum';
 import ThumbnailView from './components/albums/images/ThumbnailView';
 import ListView from './components/albums/images/ListView';
+import GalleryView from './components/albums/images/GalleryView';
 
 export default new VueRouter({
     routes: [
@@ -13,14 +14,14 @@ export default new VueRouter({
         { path: '/about', component: About },
         { path: '/albums', component: Albums },
         { path: '/albums/new', component: NewAlbum },
-
-        { 
-            path: '/albums/:make', 
+        {
+            path: '/albums/:make',
             component: AlbumDetail,
             children: [
                 { path: 'thumbnail', component: ThumbnailView },
                 { path: 'list', component: ListView },
-                { path: '*', redirect: 'thumbnail' }
+                { path: 'gallery', component: GalleryView },
+                { path: '', redirect: 'thumbnail' }
             ]
         },
         { path: '*', redirect: '/' }
