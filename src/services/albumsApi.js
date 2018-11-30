@@ -1,4 +1,5 @@
 import albums from '../assets/data.js';
+import shortid from 'shortid';
 
 export default {
     getAlbums() {
@@ -8,7 +9,7 @@ export default {
         return albums.find(album => album.id === id);
     },
     add(album) {
-        album.id = 'Blah';
+        album.id = shortid.generate();
         album.images = [];
         albums.push(album);
         return album;
