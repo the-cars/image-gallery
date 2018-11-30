@@ -1,14 +1,12 @@
 <template>
     <section>
-        I am the Home component
+        <h2>Welcome to Cars!</h2>
     </section>
 </template>
 
 <script>
 export default {
-    created() {
-        console.log('component has been created!');
-    }
+
 };
 </script>
 

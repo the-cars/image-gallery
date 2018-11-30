@@ -1,6 +1,6 @@
 <template>
-    <li>
-        <RouterLink :to="`/albums/${album.make}`">{{album.make}}</RouterLink>
+    <li><!-- this is the Porsche, Ferrari... list item data that appears on /albums page -->
+        <RouterLink :to="`/albums/${album.id}`">{{album.id}}</RouterLink>
     </li>
 </template>
 
@@ -13,5 +13,7 @@ export default {
 </script>
 
 <style>
-
+li {
+    border: 2px solid blue;
+}
 </style>

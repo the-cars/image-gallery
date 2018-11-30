@@ -1,7 +1,6 @@
 <template>
   <section v-if="album">
-    <h2>{{album.make}}</h2>
-    <h3>Images</h3>
+    <h2>{{album.id}}</h2>
     <Thumbnails :images="album.images"/>
     <p>
       <button>To do later</button>
