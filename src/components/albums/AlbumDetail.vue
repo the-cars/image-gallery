@@ -1,7 +1,8 @@
 <template>
-  <section> I am the Album Detail 
+  <section v-if="album">
     <h2>{{album.make}}</h2>
     <h3>Images</h3>
+    {{album}}
     <p>
       <button>To do later</button>
     </p>  
@@ -15,7 +16,7 @@ import albumsApi from '../../services/albumsApi';
 
 export default {
     created() {
-        this.album = albumsApi.getAlbum(this.$route.params.id);
+        this.album = albumsApi.getAlbum(this.$route.params.make);
     }
 };
 </script>

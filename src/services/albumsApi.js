@@ -4,7 +4,7 @@ export default {
     getAlbums() {
         return albums;
     },
-    getAlbum() {
-        return albums;
+    getAlbum(make) {
+        return albums.find(album => album.make === make);
     }
 };

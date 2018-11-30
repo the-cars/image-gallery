@@ -1,6 +1,6 @@
 <template>
     <li>
-        <RouterLink :to="`/albums/${album.id}`">{{album.make}}</RouterLink>
+        <RouterLink :to="`/albums/${album.make}`">{{album.make}}</RouterLink>
     </li>
 </template>
 
