@@ -1,8 +1,7 @@
 export default [
     {
-
-        id: 'Porsche models',
-        title: 'SO FAST',
+        id: 'Porsche',
+        title: 'Porsche models',
         description: 'Porches are awesome',
         url: 'https://commons.wikimedia.org/wiki/Porsche_automobiles',
         images: [
@@ -14,11 +13,11 @@ export default [
                 title: 'Porsche 924 Carrera GTS (1980)',
                 urlImage: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Porsche_2009_49_%28RaBoe%29.jpg/1024px-Porsche_2009_49_%28RaBoe%29.jpg'
             }
-        ],
+        ]
     },
     {
-        id: 'Ferrari models',
-        title: 'EVEN FASTER',
+        id: 'Ferrari',
+        title: 'Ferrari models',
         description: 'Ferraris are awesome',
         url: 'https://commons.wikimedia.org/wiki/Ferrari',
         images: [
@@ -30,11 +29,11 @@ export default [
                 title: 'Ferrari 360 Challenge Stradale (1999–2004)',
                 urlImage: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Ferrari_360_Challenge_%2818964877690%29.jpg/1280px-Ferrari_360_Challenge_%2818964877690%29.jpg'
             }
-        ],
+        ]
     },
     {
-        id: 'Corvette models',
-        title: 'HOP ON IN!',
+        id: 'Corvette',
+        title: 'Corvette models',
         description: 'Corvettes are awesome',
         url: 'https://commons.wikimedia.org/wiki/Chevrolet_Corvette',
         images: [
@@ -46,11 +45,11 @@ export default [
                 title: 'Corvette Stingray convertible (2014)',
                 urlImage: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/2013-03-05_Geneva_Motor_Show_7858.JPG/1280px-2013-03-05_Geneva_Motor_Show_7858.JPG'
             }
-        ],
+        ]
     },
     {
-        id: 'Lamborghini models',
-        title: 'YOU CAN\'T AFFORD ME',
+        id: 'Lamborghini',
+        title: 'Lamborghini models',
         description: 'Lamborghinis are awesome',
         url: 'https://commons.wikimedia.org/wiki/Category:Lamborghini_automobiles',
         images: [
@@ -62,11 +61,11 @@ export default [
                 title: 'Lamborghini 400 GT Monza (1966)',
                 urlImage: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/1966_Lamborghini_400_GT_Monza.jpg/1280px-1966_Lamborghini_400_GT_Monza.jpg'
             }
-        ],
+        ]
     },
     {
         id: 'Audi',
-        title: 'ZOOM ZOOM ZOOM',
+        title: 'Audi models',
         description: 'Audis are awesome',
         url: 'https://commons.wikimedia.org/wiki/Audi',
         images: [
@@ -78,7 +77,7 @@ export default [
                 title: 'Audi A4 Allroad Auattro (1999-)',
                 urlImage: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Audi_A4_allroad_quattro_%2823705060874%29.jpg/1280px-Audi_A4_allroad_quattro_%2823705060874%29.jpg'
             }
-        ],
-    },
+        ]
+    }
 ];
 

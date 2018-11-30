@@ -6,5 +6,11 @@ export default {
     },
     getAlbum(id) {
         return albums.find(album => album.id === id);
+    },
+    add(album) {
+        album.id = 'Blah';
+        album.images = [];
+        albums.push(album);
+        return album;
     }
 };

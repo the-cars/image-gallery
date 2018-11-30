@@ -1,6 +1,6 @@
 <template>
     <li><!-- this is the Porsche, Ferrari... list item data that appears on /albums page -->
-        <RouterLink :to="`/albums/${album.id}`">{{album.id}}</RouterLink>
+        <RouterLink :to="`/albums/${album.id}`">{{album.title}}</RouterLink>
     </li>
 </template>
 
