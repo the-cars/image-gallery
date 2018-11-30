@@ -14,6 +14,6 @@ export default {
 
 <style>
 li {
-    border: 2px solid blue;
+    border: 2px solid steelblue;
 }
 </style>

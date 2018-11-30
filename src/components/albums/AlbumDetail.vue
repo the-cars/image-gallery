@@ -74,4 +74,31 @@ div.content {
   background: white;
   padding: 40px;
 }
+
+form {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  button {
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 0.75em;
+    background-color:rgba(175, 22, 22, 0.851);
+    color: lightsteelblue;
+  }
+  span {
+    display: inline-block;
+  }
+  input {
+    width: 200px;
+    height: 20px;
+  }
+  label {
+    display: flex;
+    padding-right: 7px;
+    font-size: 1.1em;
+    font-weight: 500;
+  }
 </style>
