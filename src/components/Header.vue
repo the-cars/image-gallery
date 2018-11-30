@@ -1,10 +1,11 @@
 <template>
   <header>
+      <RouterLink to="/"><img src="../assets/logo.png" alt="cars logo" class="logo"></RouterLink>
     <nav>
       <RouterLink to="/">Home</RouterLink>
       <RouterLink to="/albums">Albums</RouterLink>
     </nav>
-  </header>    
+  </header>
 </template>
 
 <script>
@@ -16,6 +17,6 @@ export default {
 <style>
 nav {
   display:flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 </style>

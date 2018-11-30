@@ -1,7 +1,6 @@
 <template>
   <div id="app">
-    This is App
-    <Header />
+    <Header/>
       <main>
           <RouterView></RouterView>
       </main>
@@ -16,7 +15,6 @@ export default {
     components: {
         Header
     }
-
 };
 </script>
 
@@ -27,6 +25,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
