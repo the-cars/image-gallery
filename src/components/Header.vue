@@ -2,6 +2,7 @@
   <header>
     <nav>
       <RouterLink to="/">Home</RouterLink>
+      <RouterLink to="/albums">Albums</RouterLink>
     </nav>
   </header>    
 </template>
