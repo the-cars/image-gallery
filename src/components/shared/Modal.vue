@@ -3,7 +3,6 @@
     <div class="content">
       <button class="close" @click="onClose">X</button>
       <slot></slot>
-
     </div>
   </div>
 </template>
@@ -18,7 +17,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 div.modal {
   position: fixed;
   top: 0; left: 0;

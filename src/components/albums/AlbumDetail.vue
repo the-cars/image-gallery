@@ -6,14 +6,8 @@
       <button @click="showModal = true">Add a new Image</button>
     </p>
     <Modal :show="showModal" :onClose="() => showModal = false">
-      <form>
-        Title: <input>
-        Url: <input>
-        <button>Save</button>
-      </form>
+      <AddImage :onAdd="handleImageAdd()"/>
     </Modal>
-      
-
     <nav>
       <RouterLink to="./thumbnail">Thumbnail</RouterLink>
       <RouterLink to="./list">List</RouterLink>
@@ -26,6 +20,7 @@
 <script>
 import albumsApi from '../../services/albumsApi';
 import Modal from '../shared/Modal';
+import AddImage from './images/AddImage';
 
 export default {
     data() {
@@ -35,19 +30,25 @@ export default {
             image: {}
         };
     },
-    methods: {
-        handleAdd() {
-            this.album.images.push(this.image);
-            this.showModal = false;
-            this.image = {};
-        }
-    },
+    // methods: {
+    //     handleAdd() {
+    //         this.album.images.push(this.image);
+    //         this.showModal = false;
+    //         this.image = {};
+    //     }
+    // },
     components: {
-        Modal
+        Modal,
+        AddImage
     },
     created() {
         this.album = albumsApi.getAlbum(this.$route.params.make);
-    }
+    },
+    methods: {
+        handleImageAdd(image) {
+            console.log('AddImage hosted in Modal says', image);
+        }
+    } 
 };
 </script>
 
