@@ -1,6 +1,7 @@
 <template>
   <form @submit.prevent="handleSubmit">
-    <input v-model="album.title" required>
+    Title: <input v-model="album.title" required>
+    Description: <input v-model="album.description" required>
     <button>Add</button>
   </form>
 </template>
