@@ -12,6 +12,14 @@ export default [
             {
                 title: 'Porsche 924 Carrera GTS (1980)',
                 urlImage: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Porsche_2009_49_%28RaBoe%29.jpg/1024px-Porsche_2009_49_%28RaBoe%29.jpg'
+            },
+            {
+                title: 'Porsche 718 Boxster (2018)',
+                urlImage: 'https://www.patentati.it/listini-auto/foto/porsche-718-boxster-s.jpg'
+            },
+            {
+                title: 'Porsche Cayman R',
+                urlImage: 'https://cdn2.evo.co.uk/sites/evo/files/styles/gallery_adv/public/images/dir_853/car_photo_426841.jpg'
             }
         ]
     },
@@ -33,6 +41,10 @@ export default [
                 title: 'Ferrari 250 GTO (1962)',
                 urlImage: 'https://upload.wikimedia.org/wikipedia/commons/6/65/01-bonhams-ferrari-monterey-2014-1.jpg'
             },
+            {
+                title: 'Ferrari 458 Italia Coupe (2013)',
+                urlImage: 'https://1-photos7.motorcar.com/used-2013-ferrari-458_italia-coupe-8431-17283912-1-1024.jpg'
+            }
         ]
     },
     {
@@ -48,6 +60,14 @@ export default [
             {
                 title: 'Corvette Stingray convertible (2014)',
                 urlImage: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/2013-03-05_Geneva_Motor_Show_7858.JPG/1280px-2013-03-05_Geneva_Motor_Show_7858.JPG'
+            },
+            {
+                title: 'Corvette C1 (1958)',
+                urlImage: 'https://assets.catawiki.nl/assets/2016/5/7/7/e/2/7e2e0d40-142d-11e6-9965-e04a39ba1dc0.jpg'
+            },
+            {
+                title: 'Corvette C6 (2006)',
+                urlImage: 'https://www.corvsport.com/wp-content/uploads/2017/01/C6-Corvette.png'
             }
         ]
     },
@@ -64,6 +84,14 @@ export default [
             {
                 title: 'Lamborghini 400 GT Monza (1966)',
                 urlImage: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/1966_Lamborghini_400_GT_Monza.jpg/1280px-1966_Lamborghini_400_GT_Monza.jpg'
+            },
+            {
+                title: 'Lamborghini Aventador SVJ (2019)',
+                urlImage: 'https://icdn3.digitaltrends.com/image/2019-lamborghini-aventador-svj-prd-1200x630-c-ar1.91.jpg'
+            },
+            {
+                title: 'Lamborghini Gallardo Spyder (2008)',
+                urlImage: 'https://www.rollsroycelongisland.com/galleria_images/438/438_main_f.jpg'
             }
         ]
     },
@@ -80,6 +108,14 @@ export default [
             {
                 title: 'Audi A4 Allroad Auattro (1999-)',
                 urlImage: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Audi_A4_allroad_quattro_%2823705060874%29.jpg/1280px-Audi_A4_allroad_quattro_%2823705060874%29.jpg'
+            },
+            {
+                title: 'Audi A3 Cabriolet',
+                urlImage: 'https://www.telegraph.co.uk/cars/images/2018/04/26/A3-Cabriolet-front-xlarge_trans_NvBQzQNjv4Bqprf7NY8zDdPuJL7z-enr1IwNWqdEfEc2GaEcCSR8sSg.jpg'
+            },
+            {
+                title: 'Audi A6 (2018)',
+                urlImage: 'https://pictures.dealer.com/c/continentalaudiofnapervilleaoa/1207/f3888b4149fe87a988b4b22c2ba40f26x.jpg'
             }
         ]
     }
