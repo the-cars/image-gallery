@@ -56,7 +56,8 @@ h4 {
   font-size: .85em;
   z-index: 1;
   color:red;
-  font-weight: bold
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.699);
 }
 
 </style>
