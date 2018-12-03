@@ -1,29 +1,9 @@
-# image-gallery
+# Image Gallery app
 
-## Project setup
-```
-npm install
-```
+## by Carmen Ramos and Cari Palazzolo
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+### Description
+We built a multi-component interactive Vue.js app displaying cars in different gallery formats, allowing users to add new albums and new images as well.
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Technologies Used
+Vue CLI, JavaScript, HTML, CSS

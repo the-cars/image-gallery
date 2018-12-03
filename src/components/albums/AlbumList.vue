@@ -1,5 +1,5 @@
 <template>
-    <ul><!-- this is the Porsche, Ferrari... list item container that appears on /albums page -->
+    <ul>
         <Album v-for="album in albums"
             :key="album.id"
             :album="album"/>
