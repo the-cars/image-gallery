@@ -19,7 +19,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 ul {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
