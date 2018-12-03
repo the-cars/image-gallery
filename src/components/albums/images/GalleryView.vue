@@ -48,8 +48,10 @@ div {
     margin: 0 auto;
 }
 h4 {
+    position: relative;
     color: red;
     font-weight: bold;
+    font-size: 16px;
     margin: 0px;
 }
 img {

@@ -20,7 +20,6 @@ export default {
 </script>
 
 <style>
-
 ul {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -53,7 +52,7 @@ h4 {
   margin: 0;
   width: 100%;
   height: 40px;
-  font-size: .85em;
+  font-size: .75em;
   z-index: 1;
   color:red;
   font-weight: bold;
