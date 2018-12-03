@@ -2,7 +2,7 @@
   <section>
     <h2>Albums</h2>
     <button @click="showModal = true">Add a new Album</button>
-    <Modal :show="showModal" :onClose="() => showModal = false">
+    <Modal v-if="showModal" :onClose="() => showModal = false">
         <NewAlbum/>
     </Modal>
     <AlbumList :albums="albums"/>

@@ -1,10 +1,8 @@
 import albumData from '../assets/data.js';
 import shortid from 'shortid';
 
-// check if we saved something to local storage
 const json = window.localStorage.getItem('albums');
 
-// if found, use it - otherwise use the seed data
 let albums = null;
 
 if(json) {

@@ -1,6 +1,6 @@
 <template>
-  <div v-if="show" class="modal">
-    <div class="content">
+    <div class="modal" @click="onClose" @keyup.esc="onClose">
+    <div class="content" @click.stop="">
       <button class="close" @click="onClose">X</button>
       <slot></slot>
     </div>
@@ -11,8 +11,18 @@
 
 export default {
     props: {
-        show: Boolean,
         onClose: Function
+    },
+    created() {
+        this.documentListener = event => {
+            if(event.keyCode === 27) {
+                this.onClose();
+            }
+        };
+        document.addEventListener('keyup', this.documentListener);
+    },
+    destroyed() {
+        document.removeEventListener('keyup', this.documentListener);
     }
 };
 </script>
@@ -34,12 +44,10 @@ div.content {
   background: white;
   padding: 40px;
 }
-
 form {
-    text-align: center;
-    display: flex;
-    justify-content: space-evenly;
-   
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
 }
 button {
   border: 2px solid black;
@@ -62,7 +70,6 @@ label {
   font-size: 1.1em;
   font-weight: 500;
 }
-
 .close {
   position: absolute;
   top: 5px;

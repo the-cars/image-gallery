@@ -2,7 +2,7 @@ export default [
     {
         id: 'Porsche',
         title: 'Porsche models',
-        description: 'Porches are awesome',
+        description: 'Porsche is a German automobile manufacturer specializing in high-performance sports cars, SUVs and sedans. Headquartered in Stuttgart, Porsche\'s current lineup includes the 718 Boxster/Cayman, 911, Panamera, Macan and Cayenne.',
         url: 'https://commons.wikimedia.org/wiki/Porsche_automobiles',
         images: [
             {
@@ -18,7 +18,7 @@ export default [
     {
         id: 'Ferrari',
         title: 'Ferrari models',
-        description: 'Ferraris are awesome',
+        description: 'Ferrari is an Italian luxury sports car manufacturer based in Maranello. Throughout its history, the company has been noted for its continued participation in racing, especially in Formula One, where it is the most successful racing team. Ferrari road cars are generally seen as a symbol of speed, luxury and wealth.',
         url: 'https://commons.wikimedia.org/wiki/Ferrari',
         images: [
             {
@@ -27,14 +27,18 @@ export default [
             },
             {
                 title: 'Ferrari 360 Challenge Stradale (1999–2004)',
-                urlImage: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Ferrari_360_Challenge_%2818964877690%29.jpg/1280px-Ferrari_360_Challenge_%2818964877690%29.jpg'
-            }
+                urlImage: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Ferrari_360_Challenge_%2818964877690%29.jpg/1280px-Ferrari_360_Challenge_%2818964877690%29.jpg',
+            },
+            {
+                title: 'Ferrari 250 GTO (1962)',
+                urlImage: 'https://upload.wikimedia.org/wikipedia/commons/6/65/01-bonhams-ferrari-monterey-2014-1.jpg'
+            },
         ]
     },
     {
         id: 'Corvette',
         title: 'Corvette models',
-        description: 'Corvettes are awesome',
+        description: 'The Chevrolet Corvette, known also as the Vette or Chevy Corvette, is a front engine, rear drive, two-door, two-passenger sports car manufactured and marketed by Chevrolet across more than sixty years of production and seven design generations. Widely known as "America\'s Sports Car”, the Corvette became synonymous with freedom and adventure ultimately becoming both the most successful concept car in history and the most popular sports car in history.',
         url: 'https://commons.wikimedia.org/wiki/Chevrolet_Corvette',
         images: [
             {
@@ -50,7 +54,7 @@ export default [
     {
         id: 'Lamborghini',
         title: 'Lamborghini models',
-        description: 'Lamborghinis are awesome',
+        description: 'Lamborghini is an Italian brand and manufacturer of luxury sports cars and SUVs based in Sant\'Agata Bolognese. The company is owned by the Volkswagen Group through its subsidiary Audi. Lamborghini produces sports cars and V12 engines for offshore powerboat racing. Lamborghini currently produces the V12-powered Aventador and the V10-powered Huracán along with the Urus SUV powered by a twin-turbo V8 engine.',
         url: 'https://commons.wikimedia.org/wiki/Category:Lamborghini_automobiles',
         images: [
             {
@@ -66,7 +70,7 @@ export default [
     {
         id: 'Audi',
         title: 'Audi models',
-        description: 'Audis are awesome',
+        description: 'Audi is a German automobile manufacturer that designs, engineers, produces, markets and distributes luxury vehicles. Audi is a member of the Volkswagen Group and has its roots at Ingolstadt, Bavaria, Germany.',
         url: 'https://commons.wikimedia.org/wiki/Audi',
         images: [
             {

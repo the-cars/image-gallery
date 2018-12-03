@@ -5,7 +5,7 @@
     <p>
       <button @click="showModal = true">Add a new Image</button>
     </p>
-    <Modal :show="showModal" :onClose="() => showModal = false">
+    <Modal v-if="showModal" :onClose="() => showModal = false">
       <AddImage :onAdd="handleImageAdd"/>
     </Modal>
     <nav>
