@@ -1,13 +1,16 @@
 <template>
-        <section>
-            <h3>Gallery View</h3>
-            <div>
+    <section>
+        <h3>Gallery View</h3>
+        <div v-if="images.length">
+            <div class="flex">
                 <button @click="setIndex(-1)">&lt;</button>
                 <h4>{{image.title}}</h4>
                 <button @click="setIndex(+1)">&gt;</button>
             </div>
                 <img :src="image.urlImage">
-        </section>
+            </div>
+        <div v-else>Please add an image</div>
+    </section>
 </template>
 
 <script>
@@ -41,7 +44,7 @@ export default {
 </script>
 
 <style scoped>
-div {
+div.flex {
     display: flex;
     flex-direction: row;
     justify-content: space-around;

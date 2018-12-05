@@ -1,6 +1,7 @@
 <template>
 <section>
     <h3>Thumbnail View</h3>
+    <div v-if="images.length">
     <ul>
         <li v-for="(image, index) in images"
             :key="index">
@@ -8,6 +9,8 @@
         <img :src="image.urlImage">
         </li>
     </ul>
+    </div>
+    <div v-else>Please add an image</div>
 </section>
 </template>
 
